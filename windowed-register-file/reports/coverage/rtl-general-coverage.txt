@@ -1,0 +1,462 @@
+QuestaSim-64 vcover 2025.3 Coverage Utility 2025.09 Sep 15 2025
+Start time: 01:16:20 on Sep 02,2026
+vcover report -details ../rf_coverage.ucdb 
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /rf_top/dut_wrap/dut
+=== Design Unit: work.register_file_windowed(behavioral)
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        37        35         2    94.59%
+
+================================Branch Details================================
+
+Branch Coverage for instance /rf_top/dut_wrap/dut
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../rtl/register_file_windowed.vhd
+------------------------------------IF Branch------------------------------------
+    57                                       512     Count coming in to IF
+    57              1                        512     
+Branch totals: 1 hit of 1 branch = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    58                                       512     Count coming in to IF
+    58              1                         16     
+    67              1                        452     
+                                              44     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    71                                       452     Count coming in to IF
+    71              1                         79     
+    90              1                         66     
+    108             1                        307     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    72                                        79     Count coming in to IF
+    72              1                         65     
+    81              1                         14     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    74                                        65     Count coming in to IF
+    74              1                    ***0***     
+    76              1                         65     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    83                                        14     Count coming in to IF
+    83              1                          2     
+    85              1                         12     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    91                                        66     Count coming in to IF
+    91              1                         37     
+    100             1                         29     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    93                                        37     Count coming in to IF
+    93              1                    ***0***     
+    95              1                         37     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    102                                       29     Count coming in to IF
+    102             1                         10     
+    104             1                         19     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    119                                      307     Count coming in to IF
+    119             1                         79     
+    121             1                        228     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    123                                      228     Count coming in to IF
+    123             1                          7     
+                                             221     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    128                                      307     Count coming in to IF
+    128             1                         75     
+    130             1                        232     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    132                                      232     Count coming in to IF
+    132             1                          5     
+                                             227     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    137                                      307     Count coming in to IF
+    137             1                         60     
+    139             1                        247     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    141                                      247     Count coming in to IF
+    141             1                          7     
+                                             240     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    149                                      307     Count coming in to IF
+    149             1                        159     
+                                             148     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    152                                      307     Count coming in to IF
+    152             1                        119     
+                                             188     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    155                                      307     Count coming in to IF
+    155             1                        146     
+                                             161     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      38        36         2    94.73%
+
+================================Statement Details================================
+
+Statement Coverage for instance /rf_top/dut_wrap/dut --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../rtl/register_file_windowed.vhd
+    59              1                         16     
+    60              1                         16     
+    61              1                         16     
+    62              1                         16     
+    63              1                         16     
+    64              1                         16     
+    65              1                         16     
+    69              1                        452     
+    70              1                        452     
+    75              1                    ***0***     
+    77              1                         65     
+    79              1                         65     
+    80              1                         65     
+    82              1                         14     
+    84              1                          2     
+    86              1                         12     
+    94              1                    ***0***     
+    96              1                         37     
+    98              1                         37     
+    99              1                         37     
+    101             1                         29     
+    103             1                         10     
+    105             1                         19     
+    109             1                        307     
+    110             1                        307     
+    111             1                        307     
+    120             1                         79     
+    122             1                        228     
+    124             1                          7     
+    129             1                         75     
+    131             1                        232     
+    133             1                          5     
+    138             1                         60     
+    140             1                        247     
+    142             1                          7     
+    150             1                        159     
+    153             1                        119     
+    156             1                        146     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        438       438         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /rf_top/dut_wrap/dut --
+
+                                              Node      1H->0L      0L->1H                          "Coverage"
+                                              ---------------------------------------------------------------
+
+Total Node Count     =        221 
+Toggled Node Count   =        221 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (438 of 438 bins)
+
+=================================================================================
+=== Instance: /rf_pkg
+=== Design Unit: work.rf_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/rf_pkg/rf_rand_seq/body/#ublk#126641943#93/immed__96
+                     ../src/rf_seqs.svh(96)             0          1
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          8        na        na        na
+            Covergroup Bins         69        69         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /rf_pkg/rf_scoreboard/cg                        100.00%        100          -    Covered              
+    covered/total bins:                                    69         69          -                      
+    missing/total bins:                                     0         69          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_op                                  100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin reset                                          16          1          -    Covered              
+        bin call                                           79          1          -    Covered              
+        bin ret                                            66          1          -    Covered              
+        bin access                                        307          1          -    Covered              
+        bin idle                                           50          1          -    Covered              
+    Coverpoint cp_cwp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin w[0]                                          201          1          -    Covered              
+        bin w[16]                                          79          1          -    Covered              
+        bin w[32]                                          40          1          -    Covered              
+        bin w[48]                                          24          1          -    Covered              
+        bin w[64]                                          23          1          -    Covered              
+        bin w[80]                                          28          1          -    Covered              
+        bin w[96]                                          61          1          -    Covered              
+        bin w[112]                                         62          1          -    Covered              
+    Coverpoint cp_cansave                             100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin v[0]                                           62          1          -    Covered              
+        bin v[1]                                           61          1          -    Covered              
+        bin v[2]                                           28          1          -    Covered              
+        bin v[3]                                           23          1          -    Covered              
+        bin v[4]                                           24          1          -    Covered              
+        bin v[5]                                           40          1          -    Covered              
+        bin v[6]                                           79          1          -    Covered              
+        bin v[7]                                          201          1          -    Covered              
+    Coverpoint cp_canrestore                          100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin v[0]                                          201          1          -    Covered              
+        bin v[1]                                           79          1          -    Covered              
+        bin v[2]                                           40          1          -    Covered              
+        bin v[3]                                           24          1          -    Covered              
+        bin v[4]                                           23          1          -    Covered              
+        bin v[5]                                           28          1          -    Covered              
+        bin v[6]                                           61          1          -    Covered              
+        bin v[7]                                           62          1          -    Covered              
+    Coverpoint cp_spill                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       504          1          -    Covered              
+        bin auto[1]                                        14          1          -    Covered              
+    Coverpoint cp_fill                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       486          1          -    Covered              
+        bin auto[1]                                        32          1          -    Covered              
+    Coverpoint cp_blk                                 100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin none                                          359          1          -    Covered              
+        bin in                                             46          1          -    Covered              
+        bin loc                                            41          1          -    Covered              
+        bin out                                            34          1          -    Covered              
+        bin glob                                           38          1          -    Covered              
+    Cross x_op_cwp                                    100.00%        100          -    Covered              
+        covered/total bins:                                31         31          -                      
+        missing/total bins:                                 0         31          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <idle,w[112]>                               3          1          -    Covered              
+            bin <access,w[112]>                            35          1          -    Covered              
+            bin <call,w[112]>                              24          1          -    Covered              
+            bin <idle,w[96]>                                4          1          -    Covered              
+            bin <access,w[96]>                             40          1          -    Covered              
+            bin <ret,w[96]>                                 9          1          -    Covered              
+            bin <call,w[96]>                                8          1          -    Covered              
+            bin <idle,w[80]>                                4          1          -    Covered              
+            bin <idle,w[64]>                                4          1          -    Covered              
+            bin <access,w[80]>                             13          1          -    Covered              
+            bin <access,w[64]>                             11          1          -    Covered              
+            bin <ret,w[80]>                                 5          1          -    Covered              
+            bin <ret,w[64]>                                 3          1          -    Covered              
+            bin <call,w[80]>                                6          1          -    Covered              
+            bin <call,w[64]>                                5          1          -    Covered              
+            bin <idle,w[48]>                                2          1          -    Covered              
+            bin <idle,w[32]>                                2          1          -    Covered              
+            bin <access,w[48]>                             14          1          -    Covered              
+            bin <access,w[32]>                             23          1          -    Covered              
+            bin <ret,w[48]>                                 2          1          -    Covered              
+            bin <ret,w[32]>                                 3          1          -    Covered              
+            bin <call,w[48]>                                6          1          -    Covered              
+            bin <call,w[32]>                               12          1          -    Covered              
+            bin <idle,w[16]>                                7          1          -    Covered              
+            bin <access,w[16]>                             47          1          -    Covered              
+            bin <ret,w[16]>                                 7          1          -    Covered              
+            bin <call,w[16]>                               18          1          -    Covered              
+            bin <idle,w[0]>                                24          1          -    Covered              
+            bin <access,w[0]>                             124          1          -    Covered              
+            bin <ret,w[0]>                                 37          1          -    Covered              
+            bin <reset,w[0]>                               16          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ret_never_at_top                     0                     -    ZERO                 
+            ignore_bin call_never_wraps                     0                     -    ZERO                 
+            ignore_bin reset_only_at_0                      0                     -    ZERO                 
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /rf_pkg/rf_scoreboard/cg                        100.00%        100          -    Covered              
+    covered/total bins:                                    69         69          -                      
+    missing/total bins:                                     0         69          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_op                                  100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin reset                                          16          1          -    Covered              
+        bin call                                           79          1          -    Covered              
+        bin ret                                            66          1          -    Covered              
+        bin access                                        307          1          -    Covered              
+        bin idle                                           50          1          -    Covered              
+    Coverpoint cp_cwp                                 100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin w[0]                                          201          1          -    Covered              
+        bin w[16]                                          79          1          -    Covered              
+        bin w[32]                                          40          1          -    Covered              
+        bin w[48]                                          24          1          -    Covered              
+        bin w[64]                                          23          1          -    Covered              
+        bin w[80]                                          28          1          -    Covered              
+        bin w[96]                                          61          1          -    Covered              
+        bin w[112]                                         62          1          -    Covered              
+    Coverpoint cp_cansave                             100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin v[0]                                           62          1          -    Covered              
+        bin v[1]                                           61          1          -    Covered              
+        bin v[2]                                           28          1          -    Covered              
+        bin v[3]                                           23          1          -    Covered              
+        bin v[4]                                           24          1          -    Covered              
+        bin v[5]                                           40          1          -    Covered              
+        bin v[6]                                           79          1          -    Covered              
+        bin v[7]                                          201          1          -    Covered              
+    Coverpoint cp_canrestore                          100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin v[0]                                          201          1          -    Covered              
+        bin v[1]                                           79          1          -    Covered              
+        bin v[2]                                           40          1          -    Covered              
+        bin v[3]                                           24          1          -    Covered              
+        bin v[4]                                           23          1          -    Covered              
+        bin v[5]                                           28          1          -    Covered              
+        bin v[6]                                           61          1          -    Covered              
+        bin v[7]                                           62          1          -    Covered              
+    Coverpoint cp_spill                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       504          1          -    Covered              
+        bin auto[1]                                        14          1          -    Covered              
+    Coverpoint cp_fill                                100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                       486          1          -    Covered              
+        bin auto[1]                                        32          1          -    Covered              
+    Coverpoint cp_blk                                 100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin none                                          359          1          -    Covered              
+        bin in                                             46          1          -    Covered              
+        bin loc                                            41          1          -    Covered              
+        bin out                                            34          1          -    Covered              
+        bin glob                                           38          1          -    Covered              
+    Cross x_op_cwp                                    100.00%        100          -    Covered              
+        covered/total bins:                                31         31          -                      
+        missing/total bins:                                 0         31          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <idle,w[112]>                               3          1          -    Covered              
+            bin <access,w[112]>                            35          1          -    Covered              
+            bin <call,w[112]>                              24          1          -    Covered              
+            bin <idle,w[96]>                                4          1          -    Covered              
+            bin <access,w[96]>                             40          1          -    Covered              
+            bin <ret,w[96]>                                 9          1          -    Covered              
+            bin <call,w[96]>                                8          1          -    Covered              
+            bin <idle,w[80]>                                4          1          -    Covered              
+            bin <idle,w[64]>                                4          1          -    Covered              
+            bin <access,w[80]>                             13          1          -    Covered              
+            bin <access,w[64]>                             11          1          -    Covered              
+            bin <ret,w[80]>                                 5          1          -    Covered              
+            bin <ret,w[64]>                                 3          1          -    Covered              
+            bin <call,w[80]>                                6          1          -    Covered              
+            bin <call,w[64]>                                5          1          -    Covered              
+            bin <idle,w[48]>                                2          1          -    Covered              
+            bin <idle,w[32]>                                2          1          -    Covered              
+            bin <access,w[48]>                             14          1          -    Covered              
+            bin <access,w[32]>                             23          1          -    Covered              
+            bin <ret,w[48]>                                 2          1          -    Covered              
+            bin <ret,w[32]>                                 3          1          -    Covered              
+            bin <call,w[48]>                                6          1          -    Covered              
+            bin <call,w[32]>                               12          1          -    Covered              
+            bin <idle,w[16]>                                7          1          -    Covered              
+            bin <access,w[16]>                             47          1          -    Covered              
+            bin <ret,w[16]>                                 7          1          -    Covered              
+            bin <call,w[16]>                               18          1          -    Covered              
+            bin <idle,w[0]>                                24          1          -    Covered              
+            bin <access,w[0]>                             124          1          -    Covered              
+            bin <ret,w[0]>                                 37          1          -    Covered              
+            bin <reset,w[0]>                               16          1          -    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ret_never_at_top                     0                     -    ZERO                 
+            ignore_bin call_never_wraps                     0                     -    ZERO                 
+            ignore_bin reset_only_at_0                      0                     -    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/rf_pkg/rf_rand_seq/body/#ublk#126641943#93/immed__96
+                     ../src/rf_seqs.svh(96)             0          1
+
+Total Coverage By Instance (filtered view): 97.86%
+
+End time: 01:16:20 on Sep 02,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

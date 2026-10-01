@@ -1,0 +1,251 @@
+QuestaSim-64 vcover 2025.3 Coverage Utility 2025.09 Sep 15 2025
+Start time: 04:26:42 on Sep 02,2026
+vcover report -cvg -details -nocompactcrossbins ./rf_coverage_post_synthesis.ucdb 
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /rf_pkg
+=== Design Unit: work.rf_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          8        na        na        na
+            Covergroup Bins         69        69         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /rf_pkg/rf_scoreboard/cg                        100.00%        100    Covered              
+    covered/total bins:                                    69         69                      
+    missing/total bins:                                     0         69                      
+    % Hit:                                            100.00%        100                      
+    Coverpoint cp_op                                  100.00%        100    Covered              
+        covered/total bins:                                 5          5                      
+        missing/total bins:                                 0          5                      
+        % Hit:                                        100.00%        100                      
+        bin reset                                          16          1    Covered              
+        bin call                                           79          1    Covered              
+        bin ret                                            66          1    Covered              
+        bin access                                        307          1    Covered              
+        bin idle                                           50          1    Covered              
+    Coverpoint cp_cwp                                 100.00%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                        100.00%        100                      
+        bin w[0]                                          201          1    Covered              
+        bin w[16]                                          79          1    Covered              
+        bin w[32]                                          40          1    Covered              
+        bin w[48]                                          24          1    Covered              
+        bin w[64]                                          23          1    Covered              
+        bin w[80]                                          28          1    Covered              
+        bin w[96]                                          61          1    Covered              
+        bin w[112]                                         62          1    Covered              
+    Coverpoint cp_cansave                             100.00%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                        100.00%        100                      
+        bin v[0]                                           62          1    Covered              
+        bin v[1]                                           61          1    Covered              
+        bin v[2]                                           28          1    Covered              
+        bin v[3]                                           23          1    Covered              
+        bin v[4]                                           24          1    Covered              
+        bin v[5]                                           40          1    Covered              
+        bin v[6]                                           79          1    Covered              
+        bin v[7]                                          201          1    Covered              
+    Coverpoint cp_canrestore                          100.00%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                        100.00%        100                      
+        bin v[0]                                          201          1    Covered              
+        bin v[1]                                           79          1    Covered              
+        bin v[2]                                           40          1    Covered              
+        bin v[3]                                           24          1    Covered              
+        bin v[4]                                           23          1    Covered              
+        bin v[5]                                           28          1    Covered              
+        bin v[6]                                           61          1    Covered              
+        bin v[7]                                           62          1    Covered              
+    Coverpoint cp_spill                               100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        bin auto[0]                                       504          1    Covered              
+        bin auto[1]                                        14          1    Covered              
+    Coverpoint cp_fill                                100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        bin auto[0]                                       486          1    Covered              
+        bin auto[1]                                        32          1    Covered              
+    Coverpoint cp_blk                                 100.00%        100    Covered              
+        covered/total bins:                                 5          5                      
+        missing/total bins:                                 0          5                      
+        % Hit:                                        100.00%        100                      
+        bin none                                          359          1    Covered              
+        bin in                                             46          1    Covered              
+        bin loc                                            41          1    Covered              
+        bin out                                            34          1    Covered              
+        bin glob                                           38          1    Covered              
+    Cross x_op_cwp                                    100.00%        100    Covered              
+        covered/total bins:                                31         31                      
+        missing/total bins:                                 0         31                      
+        % Hit:                                        100.00%        100                      
+        Auto, Default and User Defined Bins:
+            bin <idle,w[112]>                               3          1    Covered              
+            bin <access,w[112]>                            35          1    Covered              
+            bin <call,w[112]>                              24          1    Covered              
+            bin <idle,w[96]>                                4          1    Covered              
+            bin <access,w[96]>                             40          1    Covered              
+            bin <ret,w[96]>                                 9          1    Covered              
+            bin <call,w[96]>                                8          1    Covered              
+            bin <idle,w[80]>                                4          1    Covered              
+            bin <idle,w[64]>                                4          1    Covered              
+            bin <access,w[80]>                             13          1    Covered              
+            bin <access,w[64]>                             11          1    Covered              
+            bin <ret,w[80]>                                 5          1    Covered              
+            bin <ret,w[64]>                                 3          1    Covered              
+            bin <call,w[80]>                                6          1    Covered              
+            bin <call,w[64]>                                5          1    Covered              
+            bin <idle,w[48]>                                2          1    Covered              
+            bin <idle,w[32]>                                2          1    Covered              
+            bin <access,w[48]>                             14          1    Covered              
+            bin <access,w[32]>                             23          1    Covered              
+            bin <ret,w[48]>                                 2          1    Covered              
+            bin <ret,w[32]>                                 3          1    Covered              
+            bin <call,w[48]>                                6          1    Covered              
+            bin <call,w[32]>                               12          1    Covered              
+            bin <idle,w[16]>                                7          1    Covered              
+            bin <access,w[16]>                             47          1    Covered              
+            bin <ret,w[16]>                                 7          1    Covered              
+            bin <call,w[16]>                               18          1    Covered              
+            bin <idle,w[0]>                                24          1    Covered              
+            bin <access,w[0]>                             124          1    Covered              
+            bin <ret,w[0]>                                 37          1    Covered              
+            bin <reset,w[0]>                               16          1    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ret_never_at_top                     0               ZERO                 
+            ignore_bin call_never_wraps                     0               ZERO                 
+            ignore_bin reset_only_at_0                      0               ZERO                 
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /rf_pkg/rf_scoreboard/cg                        100.00%        100    Covered              
+    covered/total bins:                                    69         69                      
+    missing/total bins:                                     0         69                      
+    % Hit:                                            100.00%        100                      
+    Coverpoint cp_op                                  100.00%        100    Covered              
+        covered/total bins:                                 5          5                      
+        missing/total bins:                                 0          5                      
+        % Hit:                                        100.00%        100                      
+        bin reset                                          16          1    Covered              
+        bin call                                           79          1    Covered              
+        bin ret                                            66          1    Covered              
+        bin access                                        307          1    Covered              
+        bin idle                                           50          1    Covered              
+    Coverpoint cp_cwp                                 100.00%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                        100.00%        100                      
+        bin w[0]                                          201          1    Covered              
+        bin w[16]                                          79          1    Covered              
+        bin w[32]                                          40          1    Covered              
+        bin w[48]                                          24          1    Covered              
+        bin w[64]                                          23          1    Covered              
+        bin w[80]                                          28          1    Covered              
+        bin w[96]                                          61          1    Covered              
+        bin w[112]                                         62          1    Covered              
+    Coverpoint cp_cansave                             100.00%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                        100.00%        100                      
+        bin v[0]                                           62          1    Covered              
+        bin v[1]                                           61          1    Covered              
+        bin v[2]                                           28          1    Covered              
+        bin v[3]                                           23          1    Covered              
+        bin v[4]                                           24          1    Covered              
+        bin v[5]                                           40          1    Covered              
+        bin v[6]                                           79          1    Covered              
+        bin v[7]                                          201          1    Covered              
+    Coverpoint cp_canrestore                          100.00%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                        100.00%        100                      
+        bin v[0]                                          201          1    Covered              
+        bin v[1]                                           79          1    Covered              
+        bin v[2]                                           40          1    Covered              
+        bin v[3]                                           24          1    Covered              
+        bin v[4]                                           23          1    Covered              
+        bin v[5]                                           28          1    Covered              
+        bin v[6]                                           61          1    Covered              
+        bin v[7]                                           62          1    Covered              
+    Coverpoint cp_spill                               100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        bin auto[0]                                       504          1    Covered              
+        bin auto[1]                                        14          1    Covered              
+    Coverpoint cp_fill                                100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        bin auto[0]                                       486          1    Covered              
+        bin auto[1]                                        32          1    Covered              
+    Coverpoint cp_blk                                 100.00%        100    Covered              
+        covered/total bins:                                 5          5                      
+        missing/total bins:                                 0          5                      
+        % Hit:                                        100.00%        100                      
+        bin none                                          359          1    Covered              
+        bin in                                             46          1    Covered              
+        bin loc                                            41          1    Covered              
+        bin out                                            34          1    Covered              
+        bin glob                                           38          1    Covered              
+    Cross x_op_cwp                                    100.00%        100    Covered              
+        covered/total bins:                                31         31                      
+        missing/total bins:                                 0         31                      
+        % Hit:                                        100.00%        100                      
+        Auto, Default and User Defined Bins:
+            bin <idle,w[112]>                               3          1    Covered              
+            bin <access,w[112]>                            35          1    Covered              
+            bin <call,w[112]>                              24          1    Covered              
+            bin <idle,w[96]>                                4          1    Covered              
+            bin <access,w[96]>                             40          1    Covered              
+            bin <ret,w[96]>                                 9          1    Covered              
+            bin <call,w[96]>                                8          1    Covered              
+            bin <idle,w[80]>                                4          1    Covered              
+            bin <idle,w[64]>                                4          1    Covered              
+            bin <access,w[80]>                             13          1    Covered              
+            bin <access,w[64]>                             11          1    Covered              
+            bin <ret,w[80]>                                 5          1    Covered              
+            bin <ret,w[64]>                                 3          1    Covered              
+            bin <call,w[80]>                                6          1    Covered              
+            bin <call,w[64]>                                5          1    Covered              
+            bin <idle,w[48]>                                2          1    Covered              
+            bin <idle,w[32]>                                2          1    Covered              
+            bin <access,w[48]>                             14          1    Covered              
+            bin <access,w[32]>                             23          1    Covered              
+            bin <ret,w[48]>                                 2          1    Covered              
+            bin <ret,w[32]>                                 3          1    Covered              
+            bin <call,w[48]>                                6          1    Covered              
+            bin <call,w[32]>                               12          1    Covered              
+            bin <idle,w[16]>                                7          1    Covered              
+            bin <access,w[16]>                             47          1    Covered              
+            bin <ret,w[16]>                                 7          1    Covered              
+            bin <call,w[16]>                               18          1    Covered              
+            bin <idle,w[0]>                                24          1    Covered              
+            bin <access,w[0]>                             124          1    Covered              
+            bin <ret,w[0]>                                 37          1    Covered              
+            bin <reset,w[0]>                               16          1    Covered              
+        Illegal and Ignore Bins:
+            ignore_bin ret_never_at_top                     0               ZERO                 
+            ignore_bin call_never_wraps                     0               ZERO                 
+            ignore_bin reset_only_at_0                      0               ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 100.00%
+
+End time: 04:26:42 on Sep 02,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

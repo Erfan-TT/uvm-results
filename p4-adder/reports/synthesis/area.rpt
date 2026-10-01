@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : P4_adder_reg
+Version: W-2024.09-SP2
+Date   : Wed Sep  2 02:22:57 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/repository/do/libnandgate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                          100
+Number of nets:                           381
+Number of cells:                          286
+Number of combinational cells:            188
+Number of sequential cells:                98
+Number of macros/black boxes:               0
+Number of buf/inv:                         20
+Number of references:                      20
+
+Combinational area:                252.966000
+Buf/Inv area:                       10.640000
+Noncombinational area:             521.360017
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   774.326017
+Total area:                 undefined
+1
