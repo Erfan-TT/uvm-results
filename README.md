@@ -1,4 +1,4 @@
-# UVM verification portfolio
+# UVM Verification Portfolio
 
 SystemVerilog/UVM verification of two VHDL designs: a registered P4 adder and a windowed register file.
 
