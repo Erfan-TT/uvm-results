@@ -1,6 +1,17 @@
 # UVM verification portfolio
 
-Verification of two VHDL RTL blocks using SystemVerilog, UVM, Questa, and Synopsys Design Compiler. Both environments are self-checking, coverage-driven, and reused for post-synthesis verification.
+SystemVerilog/UVM verification of two VHDL designs: a registered P4 adder and a windowed register file.
+
+[**Technical report**](docs/uvm-verification-report.pdf) · [**Presentation**](presentation/uvm-verification-portfolio.pdf) · [**P4 adder**](p4-adder/) · [**Windowed register file**](windowed-register-file/)
+
+## At a glance
+
+| Project | Verification focus | Results |
+| --- | --- | --- |
+| [Registered 32-bit P4 adder](p4-adder/) | Pipeline timing, arithmetic checking, reset, and carry-architecture coverage | 117/117 functional bins and 100% RTL code coverage |
+| [64-bit windowed register file](windowed-register-file/) | Window mapping, overlap, internal state, boundary behavior, and RAL backdoor checks | 69/69 functional bins; code coverage exposed a window-overflow defect |
+
+The same environments were reused for post-synthesis verification. Coverage and synthesis reports are included in each project folder.
 
 The HDL and SystemVerilog/UVM source code is not published because of university obligations. Private technical review can be arranged upon request, subject to those obligations.
 
